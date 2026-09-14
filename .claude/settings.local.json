@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(which chromium-cli *)",
+      "Read(//tmp/claude-1000/bundled-skills/**)",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(pkill -9 -f \"find / -iname\")",
+      "Bash(npm ls *)",
+      "Read(//home/santamisusingfidora/.cache/**)",
+      "Bash(timeout 60 npx --yes playwright@1.48 --version)",
+      "Read(//tmp/**)",
+      "Bash(timeout 100 npx --yes playwright@1.48 install --with-deps chromium)",
+      "Bash(timeout 100 npx --yes playwright@1.48 install chromium)",
+      "Bash(node --input-type=module -e \"import\\('playwright'\\)\")",
+      "Bash(mkdir -p /tmp/claude-1000/-run-media-santamisusingfidora-DE68AFE968AFBEA1-workcode-rkpofferpage/674008e7-723c-4345-af8d-82b67df9a342/scratchpad/pw)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node ../check-scroll.mjs)",
+      "Bash(cp /tmp/claude-1000/-run-media-santamisusingfidora-DE68AFE968AFBEA1-workcode-rkpofferpage/674008e7-723c-4345-af8d-82b67df9a342/scratchpad/check-scroll.mjs /tmp/claude-1000/-run-media-santamisusingfidora-DE68AFE968AFBEA1-workcode-rkpofferpage/674008e7-723c-4345-af8d-82b67df9a342/scratchpad/pw/check-scroll.mjs)",
+      "Bash(node check-scroll.mjs)",
+      "Bash(fc-list)",
+      "Bash(gsettings get *)",
+      "Read(//etc/**)",
+      "Bash(xdg-settings get *)",
+      "Bash(sed -i 's/waitUntil: \"networkidle\"/waitUntil: \"load\"/' check-reduced.mjs)",
+      "Bash(node check-reduced.mjs)",
+      "Bash(curl -sf -m 5 -o /dev/null -w \"HTTP %{http_code} in %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sf -m 20 -o /dev/null -w \"HTTP %{http_code} in %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(ss -ltnp 2>/dev/null | grep -E \":3000|:3002\" ; echo \"---\"; cat /proc/33689/status 2>/dev/null | grep -E \"State|Name\"; cat /proc/32403/status 2>/dev/null | grep -E \"State|Name\")",
+      "Read(//proc/33689/**)",
+      "Read(//proc/32403/**)",
+      "Bash(kill -9 35278)",
+      "Bash(xargs -r kill -9)",
+      "Bash(curl -sf -m 15 -o /dev/null -w \"HTTP %{http_code} in %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(timeout 30 node verify-fix.mjs)",
+      "Bash(lsof -ti:3002 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(rm -rf /home/santamisusingfidora/.cache/ms-playwright)",
+      "Bash(curl -sf -m 5 -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/)"
+    ]
+  }
+}
