@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@keyframes card-glow-drift {
+  0%, 100% { transform: translate(-8%, -6%) scale(1); }
+  50% { transform: translate(8%, 6%) scale(1.2); }
+}
+
+/* Each letter also wiggles perpendicular to its travel axis (via --w1..--w4, unique per
+ * letter) so parallel travelers weave around each other instead of tracing the same line. */
+@keyframes drift-x {
+  0% { left: -14%; transform: translateY(0) rotate(var(--rot, 0deg)); }
+  20% { transform: translateY(var(--w1, 3cqw)) rotate(var(--rot, 0deg)); }
+  40% { transform: translateY(var(--w2, -3cqw)) rotate(var(--rot, 0deg)); }
+  60% { transform: translateY(var(--w3, 3cqw)) rotate(var(--rot, 0deg)); }
+  80% { transform: translateY(var(--w4, -3cqw)) rotate(var(--rot, 0deg)); }
+  100% { left: 114%; transform: translateY(0) rotate(var(--rot, 0deg)); }
+}
+
+@keyframes drift-y {
+  0% { top: -14%; transform: translateX(0) rotate(var(--rot, 0deg)); }
+  20% { transform: translateX(var(--w1, 3cqw)) rotate(var(--rot, 0deg)); }
+  40% { transform: translateX(var(--w2, -3cqw)) rotate(var(--rot, 0deg)); }
+  60% { transform: translateX(var(--w3, 3cqw)) rotate(var(--rot, 0deg)); }
+  80% { transform: translateX(var(--w4, -3cqw)) rotate(var(--rot, 0deg)); }
+  100% { top: 114%; transform: translateX(0) rotate(var(--rot, 0deg)); }
+}

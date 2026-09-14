@@ -14,13 +14,13 @@ export const campaign = {
 };
 
 export const offerCategories: OfferCategory[] = [
-  { id: "relationships", label: "नातों से जुड़ें", artwork: "/assets/segment-1.svg" },
-  { id: "roots", label: "मिट्टी से जुड़ें", artwork: "/assets/segment-2.svg" },
-  { id: "self", label: "ख़ुद से जुड़ें", artwork: "/assets/segment-3.svg" },
-  { id: "language", label: "बोली से जुड़ें", artwork: "/assets/segment-4.svg" },
-  { id: "questions", label: "सवालों से जुड़ें", artwork: "/assets/segment-5.svg" },
-  { id: "ideas", label: "ख़यालों से जुड़ें", artwork: "/assets/segment-6.svg" },
-  { id: "heritage", label: "विरासत से जुड़ें", artwork: "/assets/segment-7.svg" },
-  { id: "new-writing", label: "नई कलम से जुड़ें", artwork: "/assets/segment-8.svg" },
-  { id: "poetry", label: "कविता से जुड़ें", artwork: "/assets/segment-9.svg" },
+  { id: "self", label: "ख़ुद से जुड़ें", artwork: "/assets/segment-kha.png" },
+  { id: "roots", label: "मिट्टी से जुड़ें", artwork: "/assets/segment-ma.png" },
+  { id: "ideas", label: "विचारों से जुड़ें", artwork: "/assets/segment-va.png" },
+  { id: "language", label: "भाषा से जुड़ें", artwork: "/assets/segment-bha.png" },
+  { id: "questions", label: "सवालों से जुड़ें", artwork: "/assets/segment-sa.png" },
+  { id: "journeys", label: "यात्राओं से जुड़ें", artwork: "/assets/segment-ya.png" },
+  { id: "heritage", label: "विरासत से जुड़ें", artwork: "/assets/segment-va2.png" },
+  { id: "new-writing", label: "नई कलम से जुड़ें", artwork: "/assets/segment-na.png" },
+  { id: "songs", label: "गीतों से जुड़ें", artwork: "/assets/segment-ga.png" },
 ];

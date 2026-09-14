@@ -2,9 +2,9 @@
 
 import { useRef, useState } from "react";
 import { offerCategories, type OfferCategory } from "@/data/offers";
+import { AmbientLetters } from "./AmbientLetters";
 import { CampaignBanner } from "./CampaignBanner";
 import { OfferCard } from "./OfferCard";
-import { ScrollBackdrop } from "./ScrollBackdrop";
 
 export function OffersPage() {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -15,8 +15,8 @@ export function OffersPage() {
   }
   return (
     <main className="relative isolate mx-auto min-h-svh w-full max-w-[1000px] [container-type:inline-size]">
-      <ScrollBackdrop />
-      <div className="px-[6%] pt-[7%] pb-[15%] min-[600px]:px-[8%] min-[600px]:pb-[12%] min-[900px]:px-[9.5%] min-[900px]:pt-[9.5%] min-[900px]:pb-[19.66%]">
+      <AmbientLetters />
+      <div className="relative z-10 px-[6%] pt-[7%] pb-[15%] min-[600px]:px-[8%] min-[600px]:pb-[12%] min-[900px]:px-[9.5%] min-[900px]:pt-[9.5%] min-[900px]:pb-[19.66%]">
         <CampaignBanner />
         <section aria-label="अपनी पसंद से जुड़ें" className="grid grid-cols-1 gap-6 min-[600px]:grid-cols-2 min-[900px]:grid-cols-3 min-[900px]:gap-[3.56cqw]">
           {offerCategories.map(category => <OfferCard key={category.id} category={category} onSelect={selectCategory} />)}
