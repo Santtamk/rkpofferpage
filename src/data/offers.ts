@@ -14,13 +14,13 @@ export const campaign = {
 };
 
 export const offerCategories: OfferCategory[] = [
-  { id: "self", label: "ख़ुद से जुड़ें", artwork: "/assets/segment-kha.png" },
-  { id: "roots", label: "मिट्टी से जुड़ें", artwork: "/assets/segment-ma.png" },
-  { id: "ideas", label: "विचारों से जुड़ें", artwork: "/assets/segment-va.png" },
-  { id: "language", label: "भाषा से जुड़ें", artwork: "/assets/segment-bha.png" },
-  { id: "questions", label: "सवालों से जुड़ें", artwork: "/assets/segment-sa.png" },
-  { id: "journeys", label: "यात्राओं से जुड़ें", artwork: "/assets/segment-ya.png" },
-  { id: "heritage", label: "विरासत से जुड़ें", artwork: "/assets/segment-va2.png" },
-  { id: "new-writing", label: "नई कलम से जुड़ें", artwork: "/assets/segment-na.png" },
-  { id: "songs", label: "गीतों से जुड़ें", artwork: "/assets/segment-ga.png" },
+  { id: "self", label: "ख़ुद से जुड़ें", artwork: "/assets/segment-kha.png", href: "https://www.rajkamalprakashan.com/collections/khud-se-judein" },
+  { id: "roots", label: "मिट्टी से जुड़ें", artwork: "/assets/segment-ma.png", href: "https://www.rajkamalprakashan.com/collections/mitti-se-judein" },
+  { id: "ideas", label: "विचारों से जुड़ें", artwork: "/assets/segment-va.png", href: "https://www.rajkamalprakashan.com/collections/vicharon-se-judein" },
+  { id: "language", label: "भाषा से जुड़ें", artwork: "/assets/segment-bha.png", href: "https://www.rajkamalprakashan.com/collections/bhasha-se-judein" },
+  { id: "questions", label: "सवालों से जुड़ें", artwork: "/assets/segment-sa.png", href: "https://www.rajkamalprakashan.com/collections/sawalon-se-dudein" },
+  { id: "journeys", label: "यात्राओं से जुड़ें", artwork: "/assets/segment-ya.png", href: "https://www.rajkamalprakashan.com/collections/yatraon-se-judein" },
+  { id: "heritage", label: "विरासत से जुड़ें", artwork: "/assets/segment-va2.png", href: "https://www.rajkamalprakashan.com/collections/virasat-se-judein" },
+  { id: "new-writing", label: "नई कलम से जुड़ें", artwork: "/assets/segment-na.png", href: "https://www.rajkamalprakashan.com/collections/nai-kalam-se-judein" },
+  { id: "songs", label: "गीतों से जुड़ें", artwork: "/assets/segment-ga.png", href: "https://www.rajkamalprakashan.com/collections/geeton-se-judein" },
 ];
